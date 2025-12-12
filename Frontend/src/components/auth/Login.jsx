@@ -57,6 +57,28 @@ const Login = () => {
     }
   };
 
+   // DEMO LOGIN FUNCTIONS
+  const demoStudentLogin = () => {
+    setFormData({
+      email: "abhay@gmail.com",
+      password: "1234",
+      role: "student",
+    });
+
+    
+  };
+
+  const demoRecruiterLogin = () => {
+    setFormData({
+      email: "ananya@gmail.com",
+      password: "1234",
+      role: "recruiter",
+    });
+
+   
+  };
+
+
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-[#fff0e5] via-[#f7f7ff] to-[#e6f7ff]">
       <div className="w-full max-w-md bg-white p-8 rounded-xl shadow-lg border border-gray-200">
@@ -105,7 +127,7 @@ const Login = () => {
             </select>
           </div>
 
-          {/* Submit Button */}
+          {/* Login Button */}
           <Button
             type="submit"
             disabled={loading}
@@ -113,7 +135,27 @@ const Login = () => {
           >
             {loading ? "Logging in..." : "Login"}
           </Button>
+
+          {/* Demo Login Buttons */}
+          <div className="flex items-center justify-between pt-2">
+            <Button
+              type="button"
+              onClick={demoStudentLogin}
+              className="text-xs bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-full"
+            >
+              Demo Student
+            </Button>
+
+            <Button
+              type="button"
+              onClick={demoRecruiterLogin}
+              className="text-xs bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1 rounded-full"
+            >
+              Demo Recruiter
+            </Button>
+          </div>
         </form>
+
 
         {/* Footer Links */}
         <p className="mt-6 text-sm text-center text-gray-600">
