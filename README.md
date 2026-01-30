@@ -1,4 +1,4 @@
-# Job Portal — Full‑Stack MERN Application
+# Skillbridge — Full‑Stack MERN Application
 
 A production‑ready job marketplace where candidates can browse and apply to jobs, and companies/admins can create and manage job postings and review applicants. Built with a clean React + Vite frontend and a Node.js/Express API backed by MongoDB. File uploads are handled via Cloudinary, and auth is JWT‑based with role‑guarded routes.
 
@@ -14,13 +14,10 @@ https://skillbridge-1-uwsu.onrender.com/
 * [Features](#features)
 * [Tech Stack](#tech-stack)
 * [Monorepo Structure](#monorepo-structure)
-* [Quick Start](#quick-start)
 * [Environment Variables](#environment-variables)
 * [API Overview](#api-overview)
 * [Frontend Highlights](#frontend-highlights)
 * [Common Pitfalls & Fixes](#common-pitfalls--fixes)
-* [Roadmap](#roadmap)
-* [License](#license)
 
 ---
 
@@ -77,7 +74,7 @@ https://skillbridge-1-uwsu.onrender.com/
 │   │   └── user.controller.js
 │   ├── middlewares
 │   │   ├── isAuthenticated.js
-│   │   └── mutler.js            # Multer for file uploads (typo kept to match file)
+│   │   └── multer.js           
 │   ├── models
 │   │   ├── application.model.js
 │   │   ├── company.model.js
@@ -144,8 +141,6 @@ https://skillbridge-1-uwsu.onrender.com/
 ```
 
 ---
-
-## Quick Start
 
 ### Prerequisites
 
